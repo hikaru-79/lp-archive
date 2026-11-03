@@ -1,0 +1,230 @@
+@charset "UTF-8";
+html { box-sizing:border-box} 
+*, *::before, *::after { box-sizing:inherit}
+/* 共通部分 */
+html {
+    font-size: 100%;
+}
+body {
+    background-color: #fff ;
+    font-family: 'Noto Sans JP', sans-serif; 
+    line-height: 2.2;
+    margin: 0 auto;
+    max-width: 750px;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+p {
+    color: #333;
+}
+
+/* main */
+.img02{
+  padding: 100px 0 50px 0;
+}
+.img02-1{
+  padding: 0 0 100px 0;
+}
+.img03{
+  padding: 100px 0 0 0;
+}
+.btn{
+  background-color: #bbdcf4;
+  padding:60px 0 ;
+}
+.txt01{
+  margin: 80px 0 50px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.txt02 {
+  margin: 30px 0 10px 50px;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #004ea2;
+}
+.shop{
+  margin: 0 0 0 50px;
+  font-size: 1.3rem;
+}
+.map{
+  margin: 10px 0 50px 50px;
+  font-size: 1.45rem;
+  color: #036eb8;
+  font-weight: bolder;
+}
+.img06{
+  padding-bottom: 50px;
+}
+.img07{
+  margin: 50px 0 80px 0;
+}
+footer{
+  margin-bottom: 80px;
+}
+.small{
+  max-width: 65%;
+}
+.l-small{
+  max-width: 85%;
+}
+.txt01 br:first-child,
+.txt01 br:nth-child(3),
+.txt01 br:nth-child(5),
+.txt01 br:nth-child(8)
+{
+display: none;
+}
+.time02 br{
+  display: none;
+}
+
+/* animation */
+.fadeIn{
+  animation-name:fadeInAnime;
+  animation-duration:1.3s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  }
+  
+  @keyframes fadeInAnime{
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+.fadeInTrigger{
+      opacity: 0;
+  }
+
+/* メディアクエリ タブレット */
+@media (min-width:768px) and (max-width: 959px) {
+/* 共通部分 */
+body {
+  line-height: 1.8;
+  margin: 0 10px;
+}
+/* main */
+.img02{
+padding: 50px 0 30px 0;
+}
+.img02-1{
+  padding: 0 0 60px 0;
+}
+.img03{
+padding: 60px 0 0 0;
+}
+.btn{
+background-color: #bbdcf4;
+padding:40px 0 ;
+}
+
+.txt01{
+margin: 60px 0 30px 0;
+font-size: 1.05rem;
+}
+.txt02 {
+margin: 20px 0 10px 20px;
+font-size: 2.2rem;
+}
+.shop{
+margin: 0 0 0 20px;
+font-size: 1.05rem;
+}
+.map{
+margin: 10px 0 30px 20px;
+font-size: 1.15rem;
+}
+.img06{
+padding-bottom: 30px;
+}
+.img07{
+margin: 30px 0 50px 0;
+}
+footer{
+  margin-bottom: 30px;
+}
+
+}
+
+/* メディアクエリ スマホ */
+@media (max-width: 767px) {
+/* 共通部分 */
+body {
+  line-height: 1.8;
+  margin: 0 10px;
+}
+/* main */
+.img02{
+  padding: 45px 0 20px 0;
+  }
+  .img02-1{
+    padding: 0 0 40px 0;
+  }
+.img03{
+padding: 45px 0 0 0;
+}
+.btn{
+background-color: #bbdcf4;
+padding: 25px 0 ;
+}
+.txt01{
+margin: 40px 0 20px 0;
+font-size: 0.9rem;
+font-weight: 600;
+}
+.txt02 {
+margin: 15px 0 10px 0;
+font-size: 1.4rem;
+}
+.shop{
+margin: 0;
+font-size: 0.85rem;
+white-space: nowrap;
+}
+.map{
+margin: 5px 0 20px 0;
+font-size: 0.85rem;
+}
+.img06{
+padding-bottom: 15px;
+}
+.img07{
+margin: 15px 0 30px 0;
+}
+footer{
+  margin-bottom: 30px;
+}
+.small{
+max-width: 80%;
+}
+.l-small{
+max-width: 95%;
+}
+.txt01 br:first-child,
+.txt01 br:nth-child(3),
+.txt01 br:nth-child(5),
+.txt01 br:nth-child(8)
+{
+display: block;
+}
+.time02 br{
+  display: block;
+}
+.time01 {
+  vertical-align:top;}
+table{
+  line-height: 1.65;
+}
+}
